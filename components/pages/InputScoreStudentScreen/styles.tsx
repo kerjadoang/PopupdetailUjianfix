@@ -1,0 +1,168 @@
+import Colors from '@constants/colors';
+import {StyleSheet} from 'react-native';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: Colors.white,
+  },
+  scrollView: {
+    padding: 16,
+  },
+  contentFilter: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+  },
+  filter: {
+    backgroundColor: Colors.primary.light3,
+    padding: 5,
+    borderRadius: 30,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginRight: 10,
+  },
+  textTitleModal: {
+    fontFamily: 'Poppins-Bold',
+    fontSize: 20,
+    lineHeight: 22,
+    letterSpacing: 0.25,
+    color: Colors.dark.neutral100,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  textSubModal: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    lineHeight: 22,
+    letterSpacing: 0.25,
+    color: Colors.dark.neutral100,
+    fontWeight: '400',
+  },
+  textFilter: {
+    fontFamily: 'Poppins-Bold',
+    fontSize: 14,
+    lineHeight: 22,
+    letterSpacing: 0.25,
+    color: Colors.primary.base,
+    fontWeight: '400',
+  },
+  contentKD: {
+    marginTop: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  row: {
+    flexDirection: 'row',
+  },
+  textTitle: {
+    fontFamily: 'Poppins-Bold',
+    color: Colors.dark.neutral100,
+    fontSize: 16,
+    marginRight: 2,
+  },
+  textTitleEmpty: {
+    fontFamily: 'Poppins-Bold',
+    color: Colors.dark.neutral100,
+    fontSize: 16,
+    marginRight: 2,
+    textAlign: 'center',
+    marginTop: 10,
+  },
+
+  textSubEmpty: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 12,
+    marginRight: 2,
+    color: Colors.dark.neutral50,
+    textAlign: 'center',
+  },
+  buttonKD: {
+    backgroundColor: Colors.primary.base,
+    paddingVertical: 5,
+    paddingHorizontal: 16,
+    borderRadius: 30,
+    flexDirection: 'row',
+  },
+  line: {
+    backgroundColor: Colors.dark.neutral20,
+    height: 3,
+    marginVertical: 10,
+  },
+  listButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: Colors.white,
+    padding: 16,
+    marginHorizontal: 2,
+    marginVertical: 5,
+    borderRadius: 10,
+  },
+  shadowProp: {
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  image: {
+    width: 40,
+    height: 40,
+    alignSelf: 'center',
+    marginRight: 5,
+    borderRadius: 100,
+  },
+  searchInput: {
+    backgroundColor: Colors.primary.light3,
+    fontFamily: 'Poppins-Regular',
+    borderRadius: 30,
+    paddingHorizontal: 15,
+    color: Colors.dark.neutral100,
+    width: '75%',
+  },
+  textCancel: {
+    fontFamily: 'Poppins-Regular',
+    color: Colors.primary.base,
+  },
+  textSub: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 12,
+    marginRight: 2,
+    color: Colors.dark.neutral50,
+  },
+  buttonUnChoosenItem: {
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    borderRadius: 30,
+    marginRight: 5,
+    backgroundColor: Colors.primary.light3,
+  },
+  textUnChoosenItem: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    marginRight: 2,
+    color: Colors.primary.base,
+  },
+  buttonChoosenItem: {
+    backgroundColor: Colors.primary.base,
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    borderRadius: 30,
+    marginRight: 5,
+  },
+  textChoosenItem: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    marginRight: 2,
+    color: Colors.white,
+  },
+  empty: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 300,
+  },
+});

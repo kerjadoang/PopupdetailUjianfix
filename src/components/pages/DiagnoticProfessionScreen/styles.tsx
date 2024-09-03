@@ -1,0 +1,168 @@
+import Colors from '@constants/colors';
+import Fonts from '@constants/fonts';
+import {Dimensions, StyleSheet} from 'react-native';
+
+const window = Dimensions.get('window');
+export const styles = StyleSheet.create({
+  container: {
+    backgroundColor: Colors.primary.background,
+    flex: 1,
+  },
+  subContainer: {
+    flex: 1,
+    backgroundColor: Colors.primary.background,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    paddingVertical: 16,
+  },
+  contentContainerStyle: {
+    flexGrow: 1,
+    flexDirection: 'column',
+    backgroundColor: Colors.primary.background,
+  },
+  bgBlueOrnament: {
+    resizeMode: 'cover',
+    width: '100%',
+    position: 'absolute',
+    zIndex: -1,
+    backgroundColor: '#F9FCFF',
+  },
+  styleLabel: {
+    fontWeight: '600',
+    fontSize: 16,
+    lineHeight: 20,
+    textAlign: 'center',
+    letterSpacing: 1,
+    color: Colors.white,
+  },
+
+  majorRecommendationContainer: {
+    flexDirection: 'column',
+    padding: 16,
+  },
+  majorRecommendationHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  title: {
+    fontFamily: Fonts.SemiBoldPoppins,
+    fontWeight: '600',
+    color: Colors.dark.neutral100,
+    letterSpacing: 0.25,
+    fontSize: 14,
+    lineHeight: 22,
+  },
+  max: {
+    fontFamily: Fonts.RegularPoppins,
+    fontWeight: '400',
+    color: Colors.dark.neutral60,
+    letterSpacing: 0.25,
+    fontSize: 12,
+    lineHeight: 16,
+  },
+  majorsScroll: {marginTop: 16},
+  universityListContainer: {
+    flexDirection: 'column',
+    height: 680,
+  },
+  rectangle: {
+    width: window.width * 1,
+    height: 8,
+    backgroundColor: Colors.dark.neutral20,
+  },
+  viewAll: {
+    fontWeight: '400',
+    fontSize: 12,
+    lineHeight: 16,
+    letterSpacing: 0.25,
+    color: Colors.dark.neutral80,
+    fontFamily: Fonts.RegularPoppins,
+  },
+  notFoundTitle: {
+    fontWeight: '600',
+    fontSize: 16,
+    lineHeight: 20,
+    letterSpacing: 1,
+    color: Colors.dark.neutral100,
+    fontFamily: Fonts.SemiBoldPoppins,
+    textAlign: 'center',
+    paddingTop: 12,
+  },
+  notFoundContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    paddingTop: 100,
+  },
+  notFoundLabel: {
+    fontWeight: '400',
+    fontSize: 14,
+    lineHeight: 18,
+    letterSpacing: 0.25,
+    color: Colors.dark.neutral80,
+    fontFamily: Fonts.RegularPoppins,
+    textAlign: 'center',
+    paddingTop: 6,
+  },
+  navigatorTabBarStyle: {
+    height: 45,
+    elevation: 0,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.dark.neutral20,
+  },
+  navigatorTabIndicatorStyle: {
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
+    height: 4,
+    backgroundColor: Colors.primary.base,
+  },
+  labelStyle: {
+    fontFamily: 'Poppins-SemiBold',
+    color: Colors.dark.neutral80,
+    letterSpacing: 0.25,
+    lineHeight: 22,
+    fontSize: 14,
+    textTransform: 'capitalize',
+  },
+  labelActiveStyle: {
+    fontFamily: 'Poppins-SemiBold',
+    color: Colors.primary?.base,
+    letterSpacing: 0.25,
+    lineHeight: 22,
+    fontSize: 14,
+    textTransform: 'capitalize',
+  },
+  bottomContainer: {
+    padding: 16,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+  },
+  notSuscribedContainer: {
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  notSuscribedTitle: {
+    fontWeight: '600',
+    fontSize: 16,
+    lineHeight: 24,
+    letterSpacing: 1,
+    color: Colors.dark.neutral100,
+    fontFamily: Fonts.SemiBoldPoppins,
+    textAlign: 'center',
+    paddingTop: 16,
+  },
+  notSuscribedLabel: {
+    fontWeight: '400',
+    fontSize: 14,
+    lineHeight: 22,
+    letterSpacing: 0.25,
+    color: Colors.dark.neutral80,
+    fontFamily: Fonts.RegularPoppins,
+    textAlign: 'center',
+    paddingTop: 8,
+  },
+  buttonSwipeUp: {
+    width: '100%',
+  },
+});

@@ -1,0 +1,107 @@
+import Colors from '@constants/colors';
+import Fonts from '@constants/fonts';
+import {Dimensions, StyleSheet} from 'react-native';
+
+const window = Dimensions.get('window');
+export const styles = StyleSheet.create({
+  container: {
+    padding: 16,
+    paddingLeft: 0,
+    paddingTop: 0,
+    backgroundColor: Colors.white,
+    flex: 1,
+  },
+  questionContainer: {
+    paddingLeft: 16,
+  },
+  questionTitle: {
+    fontSize: 14,
+    lineHeight: 22,
+    letterSpacing: 0.25,
+    fontFamily: Fonts.RegularPoppins,
+    color: Colors.dark.neutral100,
+    paddingBottom: 8,
+    paddingTop: 8,
+  },
+  label: {
+    fontSize: 14,
+    lineHeight: 22,
+    letterSpacing: 0.25,
+    fontFamily: Fonts.RegularPoppins,
+    color: Colors.dark.neutral100,
+    paddingBottom: 8,
+    paddingTop: 24,
+  },
+  radioInput: {flexDirection: 'row', alignItems: 'center', gap: 10},
+  bottomContainer: {
+    position: 'absolute',
+    bottom: 0,
+    width: window.width,
+    flexDirection: 'row',
+    padding: 16,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: Colors.white,
+  },
+  button: {width: '50%', marginHorizontal: 6},
+  notFoundContainer: {
+    justifyContent: 'center',
+    alignSelf: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+  },
+  notFoundText: {
+    fontWeight: '600',
+    fontSize: 16,
+    lineHeight: 20,
+    letterSpacing: 0.1,
+    textAlign: 'center',
+    fontFamily: Fonts.SemiBoldPoppins,
+    color: Colors.dark.neutral100,
+    paddingTop: 12,
+    paddingBottom: 6,
+  },
+  notFoundLabel: {
+    fontWeight: '400',
+    fontSize: 14,
+    lineHeight: 18,
+    letterSpacing: 0.25,
+    textAlign: 'center',
+    fontFamily: Fonts.SemiBoldPoppins,
+    color: Colors.dark.neutral60,
+    paddingBottom: 12,
+  },
+  uploader: {
+    padding: 16,
+    borderRadius: 10,
+    marginTop: 0,
+    paddingVertical: 4,
+    paddingHorizontal: 0,
+    borderWidth: 1,
+    borderColor: Colors.dark.neutral20,
+  },
+  swipeUpUpload: {
+    padding: 16,
+  },
+  swipeUpUploadContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  swipeUpUploadHeaderTitle: {
+    fontSize: 20,
+    lineHeight: 28,
+    color: Colors.dark.neutral100,
+    fontWeight: '600',
+    fontFamily: Fonts.SemiBoldPoppins,
+    textAlign: 'center',
+    marginBottom: 16,
+  },
+  swipeUpUploadLabel: {
+    fontSize: 16,
+    lineHeight: 24,
+    color: Colors.dark.neutral100,
+    fontWeight: '400',
+    fontFamily: Fonts.RegularPoppins,
+  },
+});

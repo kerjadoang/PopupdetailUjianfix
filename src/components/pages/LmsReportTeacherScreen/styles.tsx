@@ -1,0 +1,122 @@
+import {StyleSheet} from 'react-native';
+import Colors from '@constants/colors';
+import Fonts from '@constants/fonts';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: Colors.primary.base,
+  },
+  scrollView: {
+    backgroundColor: Colors.white,
+    // height: '100%',
+    padding: 15,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    // top: 20,
+    flex: 1,
+  },
+  titleFAB: {
+    fontFamily: Fonts.SemiBoldPoppins,
+    fontWeight: '600',
+    letterSpacing: 0.25,
+    lineHeight: 18,
+    fontSize: 14,
+    color: Colors.dark.neutral100,
+    paddingTop: 8,
+  },
+  containerFAB: {
+    paddingTop: 12,
+    paddingLeft: 16,
+    paddingBottom: 30,
+    paddingRight: 12,
+    backgroundColor: 'red',
+    width: '45%',
+    marginTop: 8,
+    height: 92,
+    borderRadius: 10,
+  },
+  subContainerFAB: {
+    flexDirection: 'column',
+  },
+  containerSwipeUp: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    paddingBottom: 16,
+  },
+  text: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 12,
+    lineHeight: 16,
+    letterSpacing: 0.25,
+    display: 'flex',
+    alignItems: 'center',
+    color: '#1D252D',
+    marginTop: 10,
+    textAlign: 'center',
+  },
+  buttonList: {
+    width: '25%',
+    alignItems: 'center',
+  },
+  listRow: {
+    flexDirection: 'row',
+    marginVertical: 30,
+  },
+  title: {
+    fontFamily: 'Poppins-Bold',
+    fontSize: 16,
+    lineHeight: 24,
+    letterSpacing: 0.01,
+    display: 'flex',
+    color: '#1D252D',
+  },
+  subTitle: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 12,
+    lineHeight: 16,
+    letterSpacing: 0.25,
+    display: 'flex',
+    color: '#868E96',
+  },
+  shadowProp: {
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 1.84,
+    elevation: 5,
+  },
+  circle: {
+    borderRadius: 100,
+    padding: 16,
+    alignSelf: 'flex-end',
+    margin: 10,
+    position: 'absolute',
+    bottom: 0,
+  },
+  contentHeader: {
+    flexDirection: 'row',
+  },
+  listContent: {},
+  buttonClass: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '47%',
+    alignItems: 'center',
+    padding: 4,
+    backgroundColor: Colors.white,
+    borderRadius: 10,
+    height: 48,
+    marginRight: 10,
+    marginBottom: 10,
+  },
+  contentClass: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+});

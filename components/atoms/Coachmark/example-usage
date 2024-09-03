@@ -1,0 +1,18 @@
+const {Coachmarks, scrollView, doneCoachMark, _handlerCoachmark} = useCoachmark(
+  Keys.coachmark_mobile_soal,
+);
+<CoachmarkLib
+  ref={ref => (Coachmarks[0] = ref)}
+  onNext={() => _handlerCoachmark(1)}
+  onShow={() => scrollView?.current?.stop()}
+  onSkip={doneCoachMark}
+  buttonOnContent
+  queue={1}
+  arrowMiddle
+  totalCoachmark={4}
+  buttonSkipText={'Lewati'}
+  childrenStyle={styles.borderCard}
+  title={'Video Animasi'}
+  message={'Tonton video materi pembelajaran untuk persiapan latihan soal'}>
+  <View>{children}</View>
+</CoachmarkLib>;

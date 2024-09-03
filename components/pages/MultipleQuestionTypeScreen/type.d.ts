@@ -1,0 +1,3 @@
+type ISubmitUUID = {
+  uuid?: string;
+};
